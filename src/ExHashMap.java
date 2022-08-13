@@ -49,7 +49,7 @@ public class ExHashMap {
         System.out.println("task 10: value of key cat2 is " + secondHashMap.get("cat2"));
 
         //task 11
-        System.out.println("task 11: " + secondHashMap.toString());
+        System.out.println("task 11: " + secondHashMap.keySet());
 
         //task 12
         HashMap<Integer, String> animals = new HashMap<Integer, String>();

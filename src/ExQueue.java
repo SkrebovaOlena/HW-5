@@ -60,8 +60,14 @@ public class ExQueue {
         System.out.println("task 9:" + firstQueue.poll());
 
         //task 10
-        List<String> list = new ArrayList<>(firstQueue);
-        System.out.println("task 10: " + list.toString());
+        int i = 0;
+        String[] array = new String[firstQueue.size()];
+        for (String color:firstQueue
+             ) {
+            array[i] = color;
+            i++;
+        }
+        System.out.println("task 10: " + array.toString());
 
         //task 11
         System.out.println("task 11: " + firstQueue.toString());
