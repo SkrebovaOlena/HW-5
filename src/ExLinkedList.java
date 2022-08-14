@@ -1,8 +1,5 @@
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ExLinkedList {
 
@@ -17,26 +14,27 @@ public class ExLinkedList {
         System.out.println("LinkedList: " + linkedList.toString());
 
         //task 1
-        linkedList.add(0, "hamster");
+        linkedList.addLast("hamster");
         System.out.println("task 1: " + linkedList.toString());
 
         //task 2
         System.out.println("task 2: ");
-        for (String i :linkedList
-             ) {
+        for (String i :linkedList) {
             System.out.println(i.toString());
         }
 
         //task 3
         System.out.println("task 3:");
-        for (int i = 2; i < linkedList.size(); i++) {
-            System.out.println(linkedList.get(i));
+        Iterator order = linkedList.listIterator(2);
+        while (order.hasNext()) {
+            System.out.println(order.hasNext());
         }
 
         //task 4
         System.out.println("task 4:");
-        for (int i = linkedList.size() - 1; i >= 0 ; i--) {
-            System.out.println(linkedList.get(i));
+        Iterator iterator = linkedList.descendingIterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.hasNext());
         }
 
         //task 5

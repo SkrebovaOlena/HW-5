@@ -15,8 +15,7 @@ public class ExQueue {
 
         //task 2
         System.out.println("task 2:");
-        for (String q:queue
-             ) {
+        for (String q:queue) {
             System.out.println(q);
         }
 
@@ -43,8 +42,7 @@ public class ExQueue {
         secondQueue.add("black");
         secondQueue.add("red");
 
-        for (String element:firstQueue
-             ) {
+        for (String element:firstQueue) {
             if (secondQueue.contains(element)){
                 System.out.println(element + ": Yes");
             }
@@ -62,8 +60,7 @@ public class ExQueue {
         //task 10
         int i = 0;
         String[] array = new String[firstQueue.size()];
-        for (String color:firstQueue
-             ) {
+        for (String color:firstQueue) {
             array[i] = color;
             i++;
         }

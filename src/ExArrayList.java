@@ -106,7 +106,6 @@ public class ExArrayList {
         fourthList.add("rabbit");
         java.util.ArrayList<String> fifthList = (java.util.ArrayList<String>) fourthList.clone();
         System.out.println("task 16: " + fifthList.toString());
-        // чому не можна було зробити (ArrayList<String>) thirdList.clone(), бо тип ліст?
 
         // task 17
         fourthList.removeAll(fourthList);
@@ -128,9 +127,8 @@ public class ExArrayList {
 
         // task 22
         System.out.println("task 22: ");
-        for (String i : thirdList
-        ) {
-            System.out.println(i);
+        for (int i = 0; i < thirdList.size(); i++) {
+            System.out.println(thirdList.get(i));
         }
     }
 }

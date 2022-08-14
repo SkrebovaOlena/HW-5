@@ -21,8 +21,7 @@ public class ExHashSet {
 
         //task 2
         System.out.println("task 2:");
-        for (String element: hashSet
-             ) {
+        for (String element: hashSet) {
             System.out.println("element: " + element);
         }
 
@@ -52,8 +51,7 @@ public class ExHashSet {
         System.out.println("task 7:");
         String [] arrayOwners = new String[owners.size()];
         int i =0;
-        for (String owner: owners
-             ) {
+        for (String owner: owners) {
             arrayOwners[i] = owner;
             System.out.println(arrayOwners[i]);
             i++;
@@ -75,12 +73,8 @@ public class ExHashSet {
         System.out.println("task 11:");
         owners.add("Beko");
         owners.add("Zanussi");
-        for (String owner:owners
-             ) {
-            if (producers.contains(owner)){
-                System.out.println(owner);
-            }
-        }
+        owners.retainAll(producers);
+        System.out.println(owners);
 
         //task 12
         owners.removeAll(owners);
