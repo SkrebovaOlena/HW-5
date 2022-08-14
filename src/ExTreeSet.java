@@ -15,13 +15,13 @@ public class ExTreeSet {
 
         //task 2
         System.out.println("task 2:");
-        for (String animal : treeSet
-        ) {
+        for (String animal : treeSet) {
             System.out.println(animal);
         }
 
         //task 3
-        TreeSet<String> animals = (TreeSet<String>) treeSet.clone();
+        TreeSet<String> animals = new TreeSet<>();
+        animals.addAll(treeSet);
         System.out.println("task 3: " + animals.toString());
 
         //task 4
